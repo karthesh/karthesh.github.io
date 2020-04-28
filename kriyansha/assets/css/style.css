@@ -776,7 +776,8 @@
 --------------------------------------------------------------*/
     
     .cta {
-        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.jpg") center center;
+        /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.gif") center center; */
+        background: url("../img/cta-bg.gif") center center;
         background-size: cover;
         padding: 80px 0;
     }
@@ -1015,17 +1016,14 @@
 --------------------------------------------------------------*/
     
     .clients {
-        padding: 0;
+        padding: 60px 0;
     }
     
-    .clients #owl-demo .item {
-        margin: 3px;
-    }
-    
-    .client #owl-demo .item img {
-        display: block;
-        width: 100%;
-        height: auto;
+    #clients .item {
+        padding: 10px;
+        margin: 10px;
+        color: #FFF;
+        text-align: center;
     }
     
     .clients .client-logo {
@@ -1039,10 +1037,9 @@
     .clients .client-logo img {
         height: 40px;
     }
-    
-    .clients .client-logo:hover img {
+    /* .clients .client-logo:hover img {
         transform: scale(1.2);
-    }
+    } */
     
     .clients img {
         transition: all 0.4s ease-in-out;
@@ -1122,6 +1119,7 @@
     .technologies-we-use {
         position: relative;
         overflow: hidden;
+        background: #fff;
     }
     
     .technologies-we-use svg {
@@ -1143,15 +1141,15 @@
     }
     
     .technologies-we-use .icon-box {
-        padding: 25px;
+        padding: 20px;
         position: relative;
         overflow: hidden;
-        margin: 12px;
+        margin: 10px;
         background: #fff;
-        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
         transition: all 0.3s ease-in-out;
         border-radius: 10px;
         text-align: center;
+        box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.2);
     }
     
     .technologies-we-use .icon-box:hover {
@@ -1159,15 +1157,15 @@
     }
     
     .technologies-we-use .icon img {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 15px;
-        image-rendering: auto;
+        /* image-rendering: auto; */
     }
     
     .technologies-we-use .title {
         font-weight: 700;
-        margin-bottom: 15px;
+        margin-top: 15px;
         font-size: 18px;
     }
     
@@ -1252,7 +1250,7 @@
         }
     }
     
-    @media (max-width: 767px) {
+    @media(max-width: 767px) {
         .contact {
             background: #f7f8f9;
         }
@@ -1262,7 +1260,7 @@
             padding: 0 0 0 100px;
         }
         .contact .php-email-form .first_text {
-            display: none;
+            visibility: hidden;
         }
         .contact .php-email-form .second_text {
             display: none;
@@ -1271,6 +1269,12 @@
             margin-bottom: 20px;
             padding-bottom: 0;
             font-size: 20px;
+        }
+        .contact #square {
+            opacity: 0.5;
+        }
+        .contact #circle {
+            opacity: 0.5;
         }
     }
     

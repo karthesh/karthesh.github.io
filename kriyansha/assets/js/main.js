@@ -178,5 +178,22 @@
     AOS.init({
         duration: 800
     });
+    $("#client").owlCarousel({
+        navigation: true,
+        autoplay: true,
+        dots: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            900: {
+                items: 6
+            }
+        }
+    });
 
 })(jQuery);
