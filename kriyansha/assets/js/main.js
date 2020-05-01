@@ -129,12 +129,12 @@
     $("#banner").owlCarousel({
         navigation: true,
         autoplay: true,
-        dots: true,
+        dots: false,
         loop: true,
         items: 1,
         slideSpeed: 300,
         paginationSpeed: 400,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 4000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn'
 
