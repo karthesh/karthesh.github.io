@@ -133,8 +133,8 @@
         loop: true,
         items: 1,
         slideSpeed: 300,
-        paginationSpeed: 400,
-        autoplayTimeout: 4000,
+        paginationSpeed: 100,
+        autoplayTimeout: 5000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn'
 
@@ -143,10 +143,7 @@
         // itemsTablet: [600, 1], //2 ititemsDesktop : [1000,5], //5 items between 1000px and 901px
 
     });
-    // Initi AOS
-    AOS.init({
-        duration: 800
-    });
+
     // Client
     $("#client").owlCarousel({
         navigation: true,
@@ -215,6 +212,9 @@
 
 
 
-
+    // Initi AOS
+    AOS.init({
+        duration: 1000
+    });
 
 })(jQuery);
